@@ -8,8 +8,8 @@ namespace Practic9_1
 {
     internal class Person
     {
-        public string name;
-        public int age;
+        private string name;
+        private int age;
         public string Name {
             get { return name; }
             set { name = value; }
@@ -31,9 +31,13 @@ namespace Practic9_1
             }
         }
 
+        public Person(string PersonName, int PersonAge){
+            Name = PersonName;
+            Age = PersonAge;
+        }
         public void SayHello()
         {
-            Console.WriteLine($"Привет, я {name}, мне {age} лет!");
+            Console.WriteLine($"Привет, я {Name}, мне {Age} лет!");
         }
 
     }

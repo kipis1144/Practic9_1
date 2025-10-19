@@ -11,10 +11,7 @@ namespace Practic9_1
         
         static void Main(string[] args)
         {
-            Person pers = new Person();
-            pers.Name = "Маша";
-            pers.Age = 25;
-
+            Person pers = new Person("Маша", 25);
             pers.SayHello();
         }
     }
